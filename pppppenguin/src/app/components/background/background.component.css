@@ -1,0 +1,17 @@
+
+header{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.padding{
+    /* display: flex; */
+    margin-left: 35%;
+    text-align: center;
+    padding-top: 300px;
+    justify-content: center;
+    
+}
