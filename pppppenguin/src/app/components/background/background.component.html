@@ -1,26 +1,51 @@
- <header>
-
-                <h1>Penguin Airlines</h1>
-
- </header>
- <div [hidden] ="hiddenGrid">
- <div class="padding" >
+<header>
+    <h1>Penguin Airlines</h1>
+</header>
+<div class="general">
+    <h1>Flight Table</h1>
+    <button (click)="ngOnInit()">All Flights</button>
+    <div class="search">
+        <h2>Departure City</h2>
+        <select id="departure" (click)= "searchByDeparture()">
+            <option value=1>New York City</option>
+            <option value=2>Los Angeles</option>
+            <option value=3>Dallas</option>
+            <option value=4>Chicago</option>
+            <option value=5>Houston</option>
+            <option value=6>San Jose</option>
+            <option value=7>Philadelphia</option>
+        </select>
+        <h2>Arrival City</h2>
+        <select id="arrival" (click) = "searchByDepartureAndArrival()">
+            <option value=1>New York City</option>
+            <option value=2>Los Angeles</option>
+            <option value=3>Dallas</option>
+            <option value=4>Chicago</option>
+            <option value=5>Houston</option>
+            <option value=6>San Jose</option>
+            <option value=7>Philadelphia</option>
+        </select>
+    </div>
+    <div class="searched" *ngFor= "let flight of returnFlightArray">
+        <app-show-flight [flights]= "flight"></app-show-flight>
+    </div>
+</div>
+<!-- <div [hidden]="hiddenGrid">
+    <div class="padding">
         <div class="textbox-card">
             <h2> Departure City</h2>
-            <p> </p>
             <div class="textbox">
-                <input id="textbox" type="text" style="width: 200px;" >
+                <input id="textbox" type="text" style="width: 200px;">
             </div>
         </div>
         <div class="textbox-card">
             <h2> Arrival City</h2>
-            <p> </p>
             <div class="textbox">
-                <input id="textbox" type="text" style="width: 200px;" >
+                <input id="textbox" type="text" style="width: 200px;">
             </div>
         </div>
         <div>
-            <button class = "button1" (click) = "show()">update</button>
+            <button class="button1" (click)="show()">Show All Flights</button>
         </div>
-    </div> 
-</div>
+    </div>
+</div> -->

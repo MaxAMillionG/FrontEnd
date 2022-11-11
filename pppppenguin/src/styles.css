@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Styling for the whole site */
+*{
+    font-family: sans-serif;
+}
+
 body
 {
     background-image: url(./assets/Gentoo-exit-water-best-750px.jpg);

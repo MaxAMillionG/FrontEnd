@@ -1,0 +1,16 @@
+<div class="general">
+    <div class="row">
+       <p class="sm">Airline</p>
+       <p class= "lg">Departure City</p>
+       <p class= "lg">Departure Time</p>
+       <p class= "med">Arrival City</p>
+       <p class= "med">Arrival Time</p>
+    </div>
+    <div class="row">
+        <p class="sm">{{flights.airline.airline}}</p>
+        <p class= "lg">{{flights.depatureCity.cityName}}</p>
+        <p class= "lg">{{flights.departureTime | time}}</p>
+        <p class= "med">{{flights.arrivalCity.cityName}}</p>
+        <p class= "med">{{flights.arrivalTime | time}}</p>
+    </div>
+</div>
